@@ -1,3 +1,4 @@
+import { links } from '#constants/links'
 import React from 'react'
 
 const Navbar = () => {
@@ -7,7 +8,13 @@ const Navbar = () => {
                 <img src='/images/logo.svg' alt='logo' />
                 <p className='font-bold'>Dovudkhon's Portfolio</p>
 
-                <ul></ul>
+                <ul>
+                    {links.map(({ id, name }) => (
+                        <li key={id}>
+                            <p>{name}</p>
+                        </li>
+                    ))}
+                </ul>
             </div>
         </nav>
     )
