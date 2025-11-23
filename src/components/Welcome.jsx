@@ -1,4 +1,5 @@
 import { FONT_WEIGHTS } from '#constants'
+import gsap from 'gsap'
 import React, { useRef } from 'react'
 
 const renderText = (text, className, baseWeight = 400) => {
@@ -15,6 +16,24 @@ const setupTextHover = (container, type) => {
     const letters = container.querySelectorAll("span")
 
     const { min, max, default: base } = FONT_WEIGHTS[type]
+
+    const animateLetter = (letter, weight, duration = 0.25) => {
+        return gsap.to(letter, {
+            duration, ease: "power2.out",
+            fontVariationSettings: `whgt ${weight}`
+        })
+    }
+
+    const handleMouseMove = (e) => {
+        const { left } = container.getBoundingClientRect()
+        const mouseX = e.clientX - left;
+
+        letters.forEach((letter) => {
+            const { left: l, width: w } = letter.getBoundingClientRect()
+            const distance = Math.abs(mouseX - (l + w / 2))
+            const intensity = Math.exp(-(distance ** 2) / 2000)
+        })
+    }
 }
 
 const Welcome = () => {
