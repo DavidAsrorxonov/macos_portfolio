@@ -1,3 +1,4 @@
+import { FONT_WEIGHTS } from '#constants'
 import React, { useRef } from 'react'
 
 const renderText = (text, className, baseWeight = 400) => {
@@ -6,6 +7,14 @@ const renderText = (text, className, baseWeight = 400) => {
             {c === ' ' ? '\u00A0' : c}
         </span>
     ))
+}
+
+const setupTextHover = (container, type) => {
+    if (!container) return
+
+    const letters = container.querySelectorAll("span")
+
+    const { min, max, default: base } = FONT_WEIGHTS[type]
 }
 
 const Welcome = () => {
