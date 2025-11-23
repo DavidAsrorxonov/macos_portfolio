@@ -1,4 +1,4 @@
-import { links } from '#constants/links'
+import { links } from '#constants'
 import React from 'react'
 
 const Navbar = () => {
