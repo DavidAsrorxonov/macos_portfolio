@@ -1,4 +1,5 @@
 import { dockApps } from "#constants";
+import { Tooltip } from "react-tooltip";
 import React, { useRef } from "react";
 
 const Dock = () => {
@@ -30,6 +31,7 @@ const Dock = () => {
             </button>
           </div>
         ))}
+        <Tooltip id="dock-tooltip" place="top" className="tooltip" />
       </div>
     </section>
   );
