@@ -4,6 +4,8 @@ import React, { useRef } from "react";
 const Dock = () => {
   const dockRef = useRef(null);
 
+  const toggleApp = (app) => {};
+
   return (
     <section id="dock">
       <div ref={dockRef} className="dock-container">
@@ -17,7 +19,15 @@ const Dock = () => {
               data-tooltip-content={name}
               data-tooltip-delay-show={150}
               disabled={!canOpen}
-            ></button>
+              onClick={() => toggleApp({ id, canOpen })}
+            >
+              <img
+                src={`/images/${icon}`}
+                alt={name}
+                loading="lazy"
+                className={canOpen ? "" : "opacity-60"}
+              />
+            </button>
           </div>
         ))}
       </div>

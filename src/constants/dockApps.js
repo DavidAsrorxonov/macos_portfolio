@@ -20,7 +20,7 @@ export const dockApps = [
     {
         id: "contact",
         name: "Contact",
-        icon: "contacts.png",
+        icon: "contact.png",
         canOpen: true
     },
     {
