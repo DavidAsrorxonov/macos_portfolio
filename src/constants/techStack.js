@@ -1,15 +1,15 @@
 export const techStack = [
   {
     category: "Frontend",
-    items: ["React.js", "Next.js", "TypeScript", "Redux"],
+    items: ["React.js", "Next.js", "TypeScript", "Redux", "Zustand"],
   },
   {
     category: "Mobile",
-    items: ["React Native", "Expo"],
+    items: ["React Native", "Expo", "Swift"],
   },
   {
     category: "Styling",
-    items: ["Tailwind CSS", "Sass", "CSS", "Bootstrap"],
+    items: ["Tailwind CSS", "Sass", "CSS", "Bootstrap", "Shadcn UI", "Hero UI"],
   },
   {
     category: "Backend",
@@ -17,10 +17,14 @@ export const techStack = [
   },
   {
     category: "Database",
-    items: ["MongoDB", "PostgreSQL", "Redis"],
+    items: ["MongoDB", "PostgreSQL", "Redis", "Supabase"],
   },
   {
     category: "Dev Tools",
-    items: ["Git", "GitHub", "Docker", "Kubernetes"],
+    items: ["Git", "GitHub", "Docker", "Kubernetes", "Vercel"],
   },
+  {
+    category: "Others",
+    items: ["WebSockets", "GraphQL", "Auth.js"]
+  }
 ];
