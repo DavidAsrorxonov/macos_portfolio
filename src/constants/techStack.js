@@ -1,7 +1,7 @@
 export const techStack = [
   {
     category: "Frontend",
-    items: ["React.js", "Next.js", "TypeScript", "Redux", "Zustand"],
+    items: ["React.js", "Next.js", "TypeScript", "Zustand"],
   },
   {
     category: "Mobile",
@@ -9,7 +9,7 @@ export const techStack = [
   },
   {
     category: "Styling",
-    items: ["Tailwind CSS", "Sass", "CSS", "Bootstrap", "Shadcn UI", "Hero UI"],
+    items: ["Tailwind CSS", "CSS", "Bootstrap", "Shadcn UI"],
   },
   {
     category: "Backend",
@@ -21,7 +21,7 @@ export const techStack = [
   },
   {
     category: "Dev Tools",
-    items: ["Git", "GitHub", "Docker", "Kubernetes", "Vercel"],
+    items: ["Git", "GitHub", "Docker", "Kubernetes"],
   },
   {
     category: "Others",
