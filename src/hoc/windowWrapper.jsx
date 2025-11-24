@@ -21,7 +21,7 @@ const WindowWrapper = (Component, windowKey) => {
         {
           scale: 0.8,
           opacity: 0,
-          y: 0,
+          y: 40,
         },
         {
           scale: 1,
