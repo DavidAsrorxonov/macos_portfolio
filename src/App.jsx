@@ -1,4 +1,5 @@
 import { Dock, Navbar, Welcome } from "#components";
+import { Terminal } from "#windows";
 import gsap from "gsap";
 
 import { Draggable } from "gsap/Draggable";
@@ -11,6 +12,8 @@ function App() {
         <Navbar />
         <Welcome />
         <Dock />
+
+        <Terminal />
       </main>
     </>
   );
