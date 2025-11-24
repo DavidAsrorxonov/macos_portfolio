@@ -24,3 +24,5 @@ const useWindowStore = create(immer((set) => ({
         win.zIndex = state.nextZIndex++;
     })
 })))
+
+export default useWindowStore
