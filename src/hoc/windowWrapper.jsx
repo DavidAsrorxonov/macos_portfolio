@@ -1,6 +1,7 @@
 import useWindowStore from "#store/window";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { Draggable } from "gsap/Draggable";
 import React, { useLayoutEffect, useRef } from "react";
 
 const WindowWrapper = (Component, windowKey) => {
@@ -32,6 +33,13 @@ const WindowWrapper = (Component, windowKey) => {
         }
       );
     }, [isOpen]);
+
+    useGSAP(() => {
+      const el = ref.current;
+      if (!el) return;
+
+      Draggable.create(el, { onPress: () => focusWindow(windowKey) });
+    }, []);
 
     useLayoutEffect(() => {
       const el = ref.current;
