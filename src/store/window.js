@@ -7,6 +7,10 @@ const useWindowStore = create(immer((set) => ({
     nextZIndex: INITIAL_Z_INDEX + 1,
 
     openWindow: (windowKey, data = null) => set((state) => {
+        if (!state.windows[windowKey]) {
+            console.error(`Invalid windowKey: ${windowKey}`);
+            return;
+        }
         const win = state.windows[windowKey]
         win.isOpen = true;
         win.zIndex = state.nextZIndex
@@ -20,6 +24,10 @@ const useWindowStore = create(immer((set) => ({
         win.data = null
     }),
     focusWindow: (windowKey, ) => set((state) => {
+        if (!state.windows[windowKey]) {
+            console.error(`Invalid windowKey: ${windowKey}`);
+            return;
+        }
         const win = state.windows[windowKey]
         win.zIndex = state.nextZIndex++;
     })
