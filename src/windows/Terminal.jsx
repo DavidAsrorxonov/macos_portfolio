@@ -11,8 +11,15 @@ const Terminal = () => {
 
       <div className="techstack">
         <p>
-          <span className="font-bold">@dovudkhon %</span> show tech stack
+          <span className="font-bold">@dovudkhon % </span> show tech stack
         </p>
+
+        <div className="label">
+          <p className="w-32">Category</p>
+          <p>Technologies</p>
+        </div>
+
+        <ul className="content"></ul>
       </div>
     </>
   );
