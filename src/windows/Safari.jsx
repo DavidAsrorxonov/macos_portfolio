@@ -43,6 +43,12 @@ const Safari = () => {
           <Copy className="icon" />
         </div>
       </div>
+
+      <div className="blog">
+        <h2>My Developer Thoughts</h2>
+
+        <div className="space-y-8"></div>
+      </div>
     </>
   );
 };
