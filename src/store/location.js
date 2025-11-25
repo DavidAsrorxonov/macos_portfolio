@@ -15,3 +15,5 @@ const useLocationStore = create(immer((set) => ({
         state.activeLocation = DEFAULT_LOCATION
     })
 })))
+
+export default useLocationStore
