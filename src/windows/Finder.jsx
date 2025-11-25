@@ -9,6 +9,8 @@ import React from "react";
 const Finder = () => {
   const { activeLocation, setActiveLocation } = useLocationStore();
 
+  const openItem = (item) => {};
+
   const renderItem = (name, item) => (
     <div>
       <h3>{name}</h3>
@@ -41,6 +43,19 @@ const Finder = () => {
           {renderItem("Favourites", Object.values(locations))}
           {renderItem("Work", locations.work.children)}
         </div>
+
+        <ul className="content">
+          {activeLocation?.children.map((item) => (
+            <li
+              key={item.id}
+              className={item.position}
+              onClick={() => openItem(item)}
+            >
+              <img src={item.icon} alt={item.name} />
+              <p>{item.name}</p>
+            </li>
+          ))}
+        </ul>
       </div>
     </>
   );
