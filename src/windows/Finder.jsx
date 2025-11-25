@@ -9,6 +9,20 @@ import React from "react";
 const Finder = () => {
   const { activeLocation, setActiveLocation } = useLocationStore();
 
+  const renderItem = (item) =>
+    item.map((item) => (
+      <li
+        key={item.id}
+        onClick={() => setActiveLocation(item)}
+        className={clsx(
+          item.id === activeLocation.id ? "active" : "not-active"
+        )}
+      >
+        <img src={item.icon} className="w-4" alt={item.name} />
+        <p className="text-sm font-medium truncate">{item.name}</p>
+      </li>
+    ));
+
   return (
     <>
       <div id="window-header">
@@ -20,25 +34,12 @@ const Finder = () => {
         <div className="sidebar">
           <div>
             <h3>Favourites</h3>
-            <ul>
-              {Object.values(locations).map((item) => (
-                <li
-                  key={item.id}
-                  onClick={() => setActiveLocation(item)}
-                  className={clsx(
-                    item.id === activeLocation.id ? "active" : "not-active"
-                  )}
-                >
-                  <img src={item.icon} className="w-4" alt={item.name} />
-                  <p className="text-sm font-medium truncate">{item.name}</p>
-                </li>
-              ))}
-            </ul>
+            <ul>{renderItem(Object.values(locations))}</ul>
           </div>
 
           <div>
             <h3>Work</h3>
-            <ul></ul>
+            <ul>{renderItem(locations.work.children)}</ul>
           </div>
         </div>
       </div>
