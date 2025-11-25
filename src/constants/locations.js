@@ -1,0 +1,273 @@
+const WORK_LOCATION = {
+  id: 1,
+  type: "work",
+  name: "Work",
+  icon: "/icons/work.svg",
+  kind: "folder",
+  children: [
+    // Project 1
+    {
+      id: 5,
+      name: "Care Pulse Hospital Management System",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-10 left-5", 
+      windowPosition: "top-[5vh] left-5", 
+      children: [
+        {
+          id: 1,
+          name: "Care Pulse Hospital Management System.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-5 left-10",
+          description: [
+            "Care Pulse Hospital Management System is a comprehensive platform designed to streamline hospital operations.",
+            "It integrates patient management, appointment scheduling, electronic health records, and billing into a single, efficient system.",
+            "Think of it as the central nervous system for a modern hospital, improving efficiency and patient care.",
+            "Built with Next.js and Tailwind, it offers a robust, user-friendly interface for healthcare professionals.",
+          ],
+        },
+        {
+          id: 2,
+          name: "carepulse.com",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://care-pulse-two-tau.vercel.app/",
+          position: "top-10 right-20",
+        },
+        {
+          id: 4,
+          name: "carepulse.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-52 right-80",
+          imageUrl: "/images/project-1.png",
+        },
+        {
+          id: 5,
+          name: "Care Pulse Hospital Management System Design.fig",
+          icon: "/images/plain.png",
+          kind: "file",
+          fileType: "fig",
+          href: "https://google.com",
+          position: "top-60 right-20",
+        },
+      ],
+    },
+
+    // Project 2
+    {
+      id: 6,
+      name: "Earthquake Predictor",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-52 right-80",
+      windowPosition: "top-[20vh] left-7",
+      children: [
+        {
+          id: 1,
+          name: "Earthquake Predictor.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-5 right-10",
+          description: [
+            "The Earthquake Predictor is a sophisticated system designed to forecast seismic activities.",
+            "It leverages advanced machine learning algorithms and historical data to identify patterns and predict potential earthquakes.",
+            "This tool aims to provide early warnings, helping communities prepare and mitigate the impact of seismic events.",
+            "Built with robust data processing capabilities, it offers insights into earthquake probabilities and magnitudes.",
+          ],
+        },
+        {
+          id: 2,
+          name: "earthquake-predictor.com",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://earthquake-predictor-wheat.vercel.app/",
+          position: "top-20 left-20",
+        },
+        {
+          id: 4,
+          name: "earthquake-predictor.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-52 left-80",
+          imageUrl: "/images/project-2.png",
+        },
+        {
+          id: 5,
+          name: "Earthquake Predictor Design.fig",
+          icon: "/images/plain.png",
+          kind: "file",
+          fileType: "fig",
+          href: "https://google.com",
+          position: "top-60 left-5",
+        },
+      ],
+    },
+
+    // Project 3
+    {
+      id: 7,
+      name: "Memory Card Game",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-10 left-80",
+      windowPosition: "top-[33vh] left-7",
+      children: [
+        {
+          id: 1,
+          name: "Memory Card Game.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-5 left-10",
+          description: [
+            "The Memory Card Game is a classic and engaging game designed to test and improve your memory skills.",
+            "Players flip over cards to find matching pairs, challenging their recall and concentration.",
+            "It's a fun way to sharpen cognitive abilities, suitable for all ages.",
+            "Built with modern web technologies, it offers a smooth and interactive experience.",
+          ],
+        },
+        {
+          id: 2,
+          name: "memory-game.com",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://memory-game-rosy-seven.vercel.app/",
+          position: "top-10 right-20",
+        },
+        {
+          id: 4,
+          name: "memory-game.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-52 right-80",
+          imageUrl: "/images/project-3.png",
+        },
+        {
+          id: 5,
+          name: "Memory Card Game Design.fig",
+          icon: "/images/plain.png",
+          kind: "file",
+          fileType: "fig",
+          href: "https://google.com",
+          position: "top-60 right-20",
+        },
+      ],
+    },
+  ],
+};
+
+const ABOUT_LOCATION = {
+  id: 2,
+  type: "about",
+  name: "About me",
+  icon: "/icons/info.svg",
+  kind: "folder",
+  children: [
+    {
+      id: 1,
+      name: "me.png",
+      icon: "/images/image.png",
+      kind: "file",
+      fileType: "img",
+      position: "top-10 left-5",
+      imageUrl: "/images/david.jpeg",
+    },
+    {
+      id: 2,
+      name: "conference-me.png",
+      icon: "/images/image.png",
+      kind: "file",
+      fileType: "img",
+      position: "top-28 right-72",
+      imageUrl: "/images/conference-david.jpg",
+    },
+    {
+      id: 3,
+      name: "casual-me.png",
+      icon: "/images/image.png",
+      kind: "file",
+      fileType: "img",
+      position: "top-52 left-80",
+      imageUrl: "/images/casual_david.jpeg",
+    },
+    {
+      id: 4,
+      name: "about-me.txt",
+      icon: "/images/txt.png",
+      kind: "file",
+      fileType: "txt",
+      position: "top-60 left-5",
+      subtitle: "Meet the Developer Behind the Code",
+      image: "/images/david.jpg",
+      description: [
+        "Greetings! I'm Dovudkhon, a passionate full-stack developer who thrives on bringing ideas to life through code.",
+        "My world revolves around the thrill of crafting elegant solutions and conquering complex challenges, one line of code at a time.",
+        "When I'm not immersed in development, you'll find me exploring cinematic universes, strategizing on the chessboard, or diving deeper into new programming paradigms.",
+      ],
+    },
+  ],
+};
+
+const RESUME_LOCATION = {
+  id: 3,
+  type: "resume",
+  name: "Resume",
+  icon: "/icons/file.svg",
+  kind: "folder",
+  children: [
+    {
+      id: 1,
+      name: "Resume.pdf",
+      icon: "/images/pdf.png",
+      kind: "file",
+      fileType: "pdf",
+      // you can add `href` if you want to open a hosted resume
+      // href: "/your/resume/path.pdf",
+    },
+  ],
+};
+
+const TRASH_LOCATION = {
+  id: 4,
+  type: "trash",
+  name: "Trash",
+  icon: "/icons/trash.svg",
+  kind: "folder",
+  children: [
+    {
+      id: 1,
+      name: "trash1.png",
+      icon: "/images/image.png",
+      kind: "file",
+      fileType: "img",
+      position: "top-10 left-10",
+      imageUrl: "/images/trash-1.png",
+    },
+    {
+      id: 2,
+      name: "trash2.png",
+      icon: "/images/image.png",
+      kind: "file",
+      fileType: "img",
+      position: "top-40 left-80",
+      imageUrl: "/images/trash-2.png",
+    },
+  ],
+};
+
+export const locations = {
+  work: WORK_LOCATION,
+  about: ABOUT_LOCATION,
+  resume: RESUME_LOCATION,
+  trash: TRASH_LOCATION,
+};
