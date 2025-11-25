@@ -1,9 +1,11 @@
 import { WindowControls } from "#components";
+import { devThoughts } from "#constants";
 import WindowWrapper from "#hoc/windowWrapper";
 import {
   ChevronLeft,
   ChevronRight,
   Copy,
+  MoveRight,
   PanelLeft,
   Plus,
   Search,
@@ -47,7 +49,23 @@ const Safari = () => {
       <div className="blog">
         <h2>My Developer Thoughts</h2>
 
-        <div className="space-y-8"></div>
+        <div className="space-y-8">
+          {devThoughts.map(({ id, date, title, image, link }) => (
+            <div key={id} className="blog-post">
+              <div className="col-span-2">
+                <img src={image} alt={title} />
+              </div>
+
+              <div className="content">
+                <p>{date}</p>
+                <h3>{title}</h3>
+                <a href={link} target="_blank" rel="noopener noreferrer">
+                  Read More <MoveRight className="icon-hover" />
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </>
   );
