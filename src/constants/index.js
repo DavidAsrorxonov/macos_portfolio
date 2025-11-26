@@ -5,6 +5,7 @@ import { dockApps } from "./dockApps";
 import { techStack } from "./techStack";
 import { devThoughts } from "./devThoughts";
 import { socials } from "./socials";
+import { contactInfo, stats } from "./contactInfo";
 
 export {
   navIcons,
@@ -14,4 +15,6 @@ export {
   techStack,
   devThoughts,
   socials,
+  contactInfo,
+  stats,
 };
