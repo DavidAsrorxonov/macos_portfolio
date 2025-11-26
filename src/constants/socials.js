@@ -27,4 +27,11 @@ export const socials = [
     bg: "#e1306c",
     link: "https://www.instagram.com/adovudkhan",
   },
+  {
+    id: 5,
+    text: "Gmail",
+    icon: "/icons/gmail.svg",
+    bg: "#ea4335",
+    link: "mailto:asrorxonovdovudxon@gmail.com",
+  },
 ];
