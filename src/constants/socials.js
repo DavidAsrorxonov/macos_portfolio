@@ -1,7 +1,7 @@
 export const socials = [
   {
     id: 1,
-    text: "Github",
+    text: "GitHub",
     icon: "/icons/github.svg",
     bg: "bg-gradient-to-br from-slate-800 via-purple-900 to-slate-900",
     link: "https://github.com/DavidAsrorxonov",
