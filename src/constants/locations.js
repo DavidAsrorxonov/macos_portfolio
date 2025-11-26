@@ -208,7 +208,7 @@ const ABOUT_LOCATION = {
       fileType: "txt",
       position: "top-60 left-5",
       subtitle: "Meet the Developer Behind the Code",
-      image: "/images/david.jpg",
+      image: "/images/david.jpeg",
       description: [
         "Greetings! I'm Dovudkhon, a passionate full-stack developer who thrives on bringing ideas to life through code.",
         "My world revolves around the thrill of crafting elegant solutions and conquering complex challenges, one line of code at a time.",
