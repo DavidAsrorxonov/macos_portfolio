@@ -44,7 +44,7 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "img",
           position: "top-52 right-80",
-          imageUrl: "/images/project-1.png",
+          imageUrl: "/images/carepulse.png",
         },
         {
           id: 5,
@@ -97,7 +97,7 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "img",
           position: "top-52 left-80",
-          imageUrl: "/images/project-2.png",
+          imageUrl: "/images/earthquakepredictor.png",
         },
         {
           id: 5,
@@ -150,7 +150,7 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "img",
           position: "top-52 right-80",
-          imageUrl: "/images/project-3.png",
+          imageUrl: "/images/memorycardgame.png",
         },
         {
           id: 5,
@@ -189,7 +189,7 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-28 right-72",
-      imageUrl: "/images/conference-david.jpg",
+      imageUrl: "/images/conference_david.jpg",
     },
     {
       id: 3,
@@ -198,7 +198,7 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-52 left-80",
-      imageUrl: "/images/casual_david.jpeg",
+      imageUrl: "/images/casual_david.jpg",
     },
     {
       id: 4,
@@ -208,7 +208,7 @@ const ABOUT_LOCATION = {
       fileType: "txt",
       position: "top-60 left-5",
       subtitle: "Meet the Developer Behind the Code",
-      image: "/images/david.jpg",
+      image: "/images/david.jpeg",
       description: [
         "Greetings! I'm Dovudkhon, a passionate full-stack developer who thrives on bringing ideas to life through code.",
         "My world revolves around the thrill of crafting elegant solutions and conquering complex challenges, one line of code at a time.",
