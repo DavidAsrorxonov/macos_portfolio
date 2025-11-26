@@ -1,3 +1,4 @@
+import { socials } from "#constants";
 import WindowWrapper from "#hoc/windowWrapper";
 import React from "react";
 
@@ -21,7 +22,21 @@ const Contact = () => {
           My superpower? Finding that one missing semicolon at 3 AM.
         </p>
 
-        <ul></ul>
+        <ul>
+          {socials.map(({ id, text, icon, bg, link }) => (
+            <li key={id} style={{ backgroundColor: bg }}>
+              <a
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+                title={text}
+              >
+                <img src={icon} alt={text} className="size-5" />
+                <p>{text}</p>
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
     </>
   );
