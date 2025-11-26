@@ -2,14 +2,23 @@ import { WindowControls } from "#components";
 import { locations } from "#constants/locations";
 import WindowWrapper from "#hoc/windowWrapper";
 import useLocationStore from "#store/location";
+import useWindowStore from "#store/window";
 import clsx from "clsx";
 import { Search } from "lucide-react";
 import React from "react";
 
 const Finder = () => {
+  const { openWindow } = useWindowStore();
   const { activeLocation, setActiveLocation } = useLocationStore();
 
-  const openItem = (item) => {};
+  const openItem = (item) => {
+    if (item.fileType === "pdf") return openWindow("resume");
+
+    if (item.kind === "folder") return setActiveLocation(item);
+
+    if (["fig", "url"].includes(item.fileType) && item.href)
+      return window.open(item.href, "_blank");
+  };
 
   const renderItem = (name, item) => (
     <div>
@@ -41,7 +50,7 @@ const Finder = () => {
       <div className="bg-white flex h-full">
         <div className="sidebar">
           {renderItem("Favourites", Object.values(locations))}
-          {renderItem("Work", locations.work.children)}
+          {renderItem("My Projects", locations.work.children)}
         </div>
 
         <ul className="content">
