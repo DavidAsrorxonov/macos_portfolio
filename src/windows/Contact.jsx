@@ -24,7 +24,7 @@ const Contact = () => {
 
         <ul>
           {socials.map(({ id, text, icon, bg, link }) => (
-            <li key={id} style={{ backgroundColor: bg }}>
+            <li key={id} className={bg}>
               <a
                 href={link}
                 target="_blank"
