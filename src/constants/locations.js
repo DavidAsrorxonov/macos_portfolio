@@ -189,7 +189,7 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-28 right-72",
-      imageUrl: "/images/conference-david.jpg",
+      imageUrl: "/images/conference_david.jpg",
     },
     {
       id: 3,
@@ -198,7 +198,7 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-52 left-80",
-      imageUrl: "/images/casual_david.jpeg",
+      imageUrl: "/images/casual_david.jpg",
     },
     {
       id: 4,
