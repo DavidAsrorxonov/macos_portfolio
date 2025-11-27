@@ -1,4 +1,6 @@
 import { locations } from "#constants/locations";
+import useLocationStore from "#store/location";
+import useWindowStore from "#store/window";
 import { useGSAP } from "@gsap/react";
 import clsx from "clsx";
 import { Draggable } from "gsap/Draggable";
@@ -7,6 +9,14 @@ import React from "react";
 const projects = locations.work?.children ?? [];
 
 const Home = () => {
+  const { setActiveLocation } = useLocationStore();
+  const { openWindow } = useWindowStore();
+
+  const handleOpenProjectWindow = (project) => {
+    setActiveLocation(project);
+    openWindow("finder");
+  };
+
   useGSAP(() => {
     Draggable.create(".folder");
   }, []);
@@ -18,6 +28,7 @@ const Home = () => {
           <li
             key={project.id}
             className={clsx("group folder", project.windowPosition)}
+            onClick={() => handleOpenProjectWindow(project)}
           >
             <img src="/images/folder.png" alt={project.name} />
             <p>{project.name}</p>
