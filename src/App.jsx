@@ -10,6 +10,8 @@ import {
 } from "#windows";
 import gsap from "gsap";
 
+import { Analytics } from "@vercel/analytics/react";
+
 import { Draggable } from "gsap/Draggable";
 gsap.registerPlugin(Draggable);
 
@@ -31,6 +33,8 @@ function App() {
 
         <Home />
       </main>
+
+      <Analytics />
     </>
   );
 }
