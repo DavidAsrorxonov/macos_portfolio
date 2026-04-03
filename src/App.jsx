@@ -18,6 +18,24 @@ gsap.registerPlugin(Draggable);
 function App() {
   return (
     <>
+      <div className="mobile-incompatible-overlay">
+        <div className="incompatibility-message">
+          <h1>Not Compatible</h1>
+          <p>
+            This portfolio is designed for{" "}
+            <span className="highlight">desktop (laptop) screens</span> only.
+          </p>
+          <p className="text-gray-300 text-sm">
+            Please open this website on a laptop or larger screen for the best
+            experience.
+          </p>
+          <div className="device-icons">
+            <span>💻</span>
+            <span>🖥️</span>
+          </div>
+        </div>
+      </div>
+
       <main>
         <Navbar />
         <Welcome />
